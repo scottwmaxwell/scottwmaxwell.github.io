@@ -129,6 +129,28 @@ a:hover {
   font-size:smaller;
 }
 
+.badge-image{
+  height:50px;
+  width:50px;
+  float:left;
+  border-radius: 10px;
+  margin: 0px 10px 0px 10px;
+}
+
+.badge{
+  animation: fadeIn 2.0s;
+  align-content: center;
+  float:left;
+  min-width:250px;
+  max-width:300px;
+  min-height:80px;
+  background-color: rgb(49, 48, 48);
+  border-radius:15px;
+  box-shadow: 0 1px 1px #585757 inset;
+  margin: 10px 10px 10px 10px;
+  user-select: none;
+}
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }

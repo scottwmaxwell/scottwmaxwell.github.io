@@ -25,6 +25,7 @@ blogButton.addEventListener("click", (e) => {
 });
 
 const showSection = (button, buttons, element, elements) => {
+  blogContainer.classList.add("hidden");
   elements.forEach((elem) => {
     if (elem.id !== element.id) elem.classList.add("hidden");
   });
@@ -40,7 +41,8 @@ const showSection = (button, buttons, element, elements) => {
 const getBlog = async (url) => {
   resp = await fetch(url);
   const blog = await resp.text();
-  blogContainer.innerHTML += blog;
+  const backButton = '<a href="#" onclick="showBlogPosts()">Back</a>';
+  blogContainer.innerHTML = backButton + blog;
   blogSection.classList.add("hidden");
   blogContainer.classList.remove("hidden");
 };
