@@ -42,7 +42,7 @@ const getBlog = async (url) => {
   resp = await fetch(url);
   const blog = await resp.text();
   const backButton = '<a href="#" onclick="showBlogPosts()">Back</a>';
-  blogContainer.innerHTML = backButton + blog;
+  blogContainer.innerHTML = blog;
   blogSection.classList.add("hidden");
   blogContainer.classList.remove("hidden");
 };
