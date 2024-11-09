@@ -94,6 +94,11 @@ a:hover {
   user-select: none;
 }
 
+.social-link{
+  white-space: nowrap;
+  margin-right:10px;
+}
+
 .blog-link {
   text-decoration: none;
 }
