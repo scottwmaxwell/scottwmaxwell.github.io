@@ -2,7 +2,7 @@ body {
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #292c2e;
+  background-color: #0f1011;
   color: rgb(255, 255, 255);
 }
 
@@ -20,35 +20,49 @@ a:hover {
   text-decoration: underline;
 }
 
-.main-content {
-  /* max-width: fit-content; */
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1000px;
+.profile-pic {
+  float: left;
+  height: 75px;
+  background-color: white;
+  border-radius: 300px;
+  margin-right: 10px;
 }
 
 a.social-links {
   /* color: rgba(0, 0, 0, 0.653); */
 }
 
+.nav {
+}
+
+.main-content {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
 .section {
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 10px 10px 10px 10px;
   margin: 10px 10px 10px 10px;
-  /* max-width:1000px; */
+  border: solid #5b5a5a;
+}
+
+.section.main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 70vh;
 }
 
 .card {
   float: none;
   padding: 10px 10px 10px 10px;
   margin: 10px 10px 10px 10px;
-  border-bottom: solid #232528;
+  border-bottom: solid #5b5a5a;
   padding-bottom: 40px;
 }
-
-/* .card-header{
-
-} */
 
 .card-img {
   margin-right: 20px;
@@ -71,4 +85,28 @@ a.social-links {
 
 .date {
   font-style: italic;
+}
+
+.nav {
+  margin-bottom: 50px;
+}
+
+.navItem {
+  cursor: pointer;
+  padding-left:10px;
+  padding-right:10px;
+  float: left;
+  margin-left: 1px;
+  list-style-type: none;
+}
+
+.navSelected {
+  background-color: rgb(67, 67, 69);
+  border-radius: 10px;
+  transition:background-color 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
