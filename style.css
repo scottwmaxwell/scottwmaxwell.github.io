@@ -1,73 +1,74 @@
-body{
-    font-family: "Varela Round", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #181a1b;
-    color:white;
+body {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #292c2e;
+  color: rgb(255, 255, 255);
 }
 
-a{
-    color:white;
-    text-decoration: none;
-}
-a:visited{
-    color:white;
-}
-a:hover{
-    color:rgb(163, 163, 186);
+a {
+  color: white;
+  text-decoration: none;
 }
 
-
-.main-content{
-    /* max-width: fit-content; */
-    margin-left: auto;
-    margin-right: auto;
-    max-width:1000px;
+a:visited {
+  color: white;
 }
 
-a.social-links{
-    color:rgba(190, 190, 202, 0.653);
+a:hover {
+  color: rgb(163, 163, 186);
+  text-decoration: underline;
+}
+
+.main-content {
+  /* max-width: fit-content; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+a.social-links {
+  /* color: rgba(0, 0, 0, 0.653); */
 }
 
 .section {
-    border-radius:10px;
-    background-color:#000000;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-    /* max-width:1000px; */
+  border-radius: 4px;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  /* max-width:1000px; */
 }
 
 .card {
-    float:none;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-    border-bottom: solid #20323e;
-    padding-bottom:40px;
+  float: none;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  border-bottom: solid #232528;
+  padding-bottom: 40px;
 }
 
 /* .card-header{
 
 } */
 
-.card-img{
-    margin-right:20px;
-    float: left;
-    width: 150px;
-    height: 100px;
-    border-radius:10px;
-    object-fit: cover;
+.card-img {
+  margin-right: 20px;
+  float: left;
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-.blog-link{
-    color:#ffffff;
-    text-decoration: none;
+.blog-link {
+  /* color: #ffffff; */
+  text-decoration: none;
 }
 
-.blog-link:hover{
-    color:rgb(163, 163, 186);
-    text-decoration: underline;
+.blog-link:hover {
+  color: rgb(163, 163, 186);
+  text-decoration: underline;
 }
 
-.date{
-    font-style: italic;
+.date {
+  font-style: italic;
 }
