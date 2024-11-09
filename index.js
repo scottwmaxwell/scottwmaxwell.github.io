@@ -28,11 +28,16 @@ blogButton.addEventListener('click', (e)=>{
 
 const showSection = (button, buttons, element, elements) => {
     elements.forEach((elem)=>{
-        if(elem != element)
+        if(elem != element){
             elem.classList.add("hidden");
+            setTimeout(()=>{
+                elem.style.visibility = "hidden";
+            }, 500);
+        }
         console.log(elem.classList);
     });
     element.classList.remove("hidden");
+    element.style.visibility = "visible";
 
     buttons.forEach((btn)=>{
         if(btn != button)

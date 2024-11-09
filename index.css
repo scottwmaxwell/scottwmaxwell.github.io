@@ -108,5 +108,5 @@ a.social-links {
 
 .hidden {
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity .5s ease;
 }
