@@ -26,6 +26,7 @@ a:hover {
   background-color: rgb(108, 57, 57);
   border-radius: 300px;
   margin-right: 10px;
+  animation: fadeIn 1s;
 }
 
 .main-content {
@@ -86,7 +87,7 @@ a:hover {
   margin-bottom: 50px;
 }
 
-.navItem {
+.nav-item {
   cursor: pointer;
   padding-left:10px;
   padding-right:10px;
@@ -95,13 +96,24 @@ a:hover {
   list-style-type: none;
 }
 
-.navSelected {
-  background-color: rgb(67, 67, 69);
+.nav-selected {
+  background-color: #5b5a5a;
   border-radius: 10px;
   transition:background-color 0.5s ease;
 }
 
+.visible{
+  opacity:100%;
+  transition: opacity .6s ease;
+}
+
 .hidden {
   opacity: 0;
-  transition: opacity .5s ease;
+  transition: opacity .6s ease;
+  pointer-events: none;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

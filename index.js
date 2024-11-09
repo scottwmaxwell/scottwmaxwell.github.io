@@ -2,7 +2,7 @@
 const aboutSection = document.getElementById('about');
 const portfolioSection = document.getElementById('portfolio');
 const blogSection = document.getElementById('blog');
-const sections = [aboutSection, portfolioSection, blogSection];
+const sections = [blogSection, portfolioSection, aboutSection];
 
 // Buttons (for showing sections)
 const aboutButton = document.getElementById('aboutButton');
@@ -28,28 +28,23 @@ blogButton.addEventListener('click', (e)=>{
 
 const showSection = (button, buttons, element, elements) => {
     elements.forEach((elem)=>{
-        if(elem != element){
+        if(elem.id !== element.id){
             elem.classList.add("hidden");
-            setTimeout(()=>{
-                elem.style.visibility = "hidden";
-            }, 500);
+            console.log("adding hidden to " + elem.id)
         }
-        console.log(elem.classList);
     });
     element.classList.remove("hidden");
-    element.style.visibility = "visible";
+    element.classList.add("visible");
 
     buttons.forEach((btn)=>{
-        if(btn != button)
-            btn.classList.remove("navSelected");
+        if(btn !== button)
+            btn.classList.remove("nav-selected");
     });
-    button.classList.add("navSelected");
+    button.classList.add("nav-selected");
 }
 
-const getBlog = async () =>{
-    resp = await fetch("/collection/example.html");
+const getBlog = async (url) =>{
+    resp = await fetch(url);
     const blog = await resp.text();
     document.body.innerHTML += blog;
 }
-
-getHTML();

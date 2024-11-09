@@ -9,14 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="./assets/memoji.png">
     <!-- style -->
     <link href="./index.css" rel="stylesheet">
 
+    <link rel="icon" href="./assets/memoji.png">
     <title>Scott Maxwell</title>
 </head>
 <body>
     <div class="main-content">
+        <!-- Header -->
         <div class="section header">
             <img class="profile-pic" height=50 src="./assets/memoji.png">
             <h1>Scott Maxwell</h1>
@@ -26,16 +27,19 @@
             </div>
         </div>
 
+        <!-- Nav -->
         <div class="nav" id="nav">
             <ul>
-                <li class="navItem navSelected" id="aboutButton">About</li>
-                <li class="navItem" id="portfolioButton">Portfolio</li>
-                <li class="navItem" id="blogButton">Blogs</li>
+                <li class="nav-item nav-selected" id="aboutButton">About</li>
+                <li class="nav-item" id="portfolioButton">Portfolio</li>
+                <li class="nav-item" id="blogButton">Blogs</li>
             </ul>
         </div>
+
+        <!-- About Me -->
         <div class="section main" id="about">
-            <h2>About me</h2>
-            <p>I get a big kick out of hacking a keyboard where a normal person would lose their mind. 
+            <h2>About Me</h2>
+            <p>I get a big kick out of hacking away on a keyboard to the point a normal person would lose their mind. 
                My definition of a perfect afternoon is a cold, bitter beer and an open terminal.
                I have an itch to create, solve, and deploy. I have a passion for privacy as I believe it is one of the most violated human rights in recent history.
                Hopefully it's not perceived as a repellent to say, but I'm a proud <b>imperfect</b> follower of Jesus Christ. To Him be all the glory forever <i>Ephesians 3:21</i>.
@@ -44,12 +48,13 @@
             <!-- TODO Create cards for  -->
         </div>
 
-        <div class="section main hidden" style="visibility:hidden;" id="portfolio">
-            <h2>Things I've made:</h2>
+        <!-- Portfolio Projects -->
+        <div class="section main hidden" id="portfolio">
+            <h2>Things I've made</h2>
                 <div class="card">
                     <a href="https://github.com/scottwmaxwell/citysurf/wiki">  
-                        <img src="./assets/thumbnail.png" class="card-img" src="#"/>
-                        <h3 class="card-header">Project Title 1</h3>
+                        <img src="./assets/citysurf.png" class="card-img" src="#"/>
+                        <h3 class="card-header">City Surf</h3>
                     </a>
                     <small>A fullstack app offering key city statistics—demographics, cost of living, weather, and more</small>
                 </div>
@@ -83,8 +88,9 @@
             </div>
         </div>
 
-        <div class="section main hidden" style="visibility:hidden;" id="blog">
-            <h2>Blogs:</h2>
+        <!-- Blogs -->
+        <div class="section main hidden" id="blog">
+            <h2>Blogs</h2>
             <a class="blog-link" href="https://medium.com/analytics-vidhya/how-to-upload-a-pandas-dataframe-to-mongodb-ffa18c0953c1"><p>How to upload a pandas DataFrame to MongoDB</p></a>
             <a class="blog-link" href="./collection/example.html"><p>Silly Blog Post</p></a>
         </div>
