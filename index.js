@@ -51,7 +51,9 @@ const blogLinks = document.getElementsByClassName("blog-link");
 for (let i = 0; i < blogLinks.length; i++) {
   blogLinks[i].addEventListener("click", (e) => {
     const url = e.target.href;
-    if (url.includes("scottwmaxwell.github.io") || url.includes("127.0.0.1")) {
+    if (url.includes("scottwmaxwell.github.io") || 
+        url.includes("127.0.0.1") ||
+        url.includes("localhost")) {
       e.preventDefault();
       getBlog(e.target.href);
     }
