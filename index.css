@@ -20,6 +20,29 @@ a:hover {
   text-decoration: underline;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+/* Hide corner white button */
+::-webkit-scrollbar-corner{
+  opacity:0%;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #5b5a5a; 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color:rgb(108, 57, 57); 
+  opacity: 20%;
+}
+
 .profile-pic {
   float: left;
   height: 75px;
